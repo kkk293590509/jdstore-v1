@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'a382e3b10a18f3d804c2dd2c9a1a3afbba43f4c44363a3c8138c3da50c2d2431c80851ee7c366bb4a85717048a393bb414d5a0a4e92ab70812088d4de0ca9f22'
+  # config.secret_key = 'c8d25c1a6ef954d076d2ac2ff4a3ae84b4d12e73a3ba6e2999054db989a0450a7581621dcbb711c73ec7ae948b4af33cfe95bf5f5f57679b422f57ca57fca008'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -35,7 +35,7 @@ Devise.setup do |config|
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
   # config.authentication_keys = [:email]
-
+  config.authentication_keys = [ :login ]
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
   # find_for_authentication method and considered in your model lookup. For instance,
@@ -108,7 +108,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'e6f32f12fa0452c3f355b2433609a49bbb72cdedfea5bbd69b0d57fc62295298b73b0b7d9ada5a47fff9963f23292df6f07637fb8d573282bba77d03875bff91'
+  # config.pepper = 'd8e02826772ac87ca80dc009106b5d25d8ad685c10261693636bc7091ed6727da22f456b4589b945b63084670d332311221582c78bd423f75d9563883ffdc3ae'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -137,7 +137,7 @@ Devise.setup do |config|
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [:email]
-
+config.confirmation_keys = [ :username ]
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
   # config.remember_for = 2.weeks
@@ -196,7 +196,7 @@ Devise.setup do |config|
   #
   # Defines which key will be used when recovering the password for an account
   # config.reset_password_keys = [:email]
-
+config.reset_password_keys = [ :username ]
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
@@ -221,7 +221,7 @@ Devise.setup do |config|
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
   # config.scoped_views = false
-
+config.scoped_views = true
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
   # config.default_scope = :user
