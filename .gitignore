@@ -23,3 +23,6 @@
 #image upload
 config/databaser.yml
 public/uploads
+
+# Ignore application configuration
+/config/application.yml
