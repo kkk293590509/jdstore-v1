@@ -21,4 +21,5 @@
 .byebug_history
 
 #image upload
+config/databaser.yml
 public/uploads
