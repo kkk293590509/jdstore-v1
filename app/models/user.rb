@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          validate :validate_username
-
+         has_many :orders
          def validate_username
            if User.where(email: username).exists?
              errors.add(:username, :invalid)
