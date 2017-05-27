@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'aasm'
-
+gem 'letter_opener', group: :development
 gem 'carrierwave'
 gem 'mini_magick'
 group :development, :test do
