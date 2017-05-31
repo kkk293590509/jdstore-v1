@@ -18,7 +18,6 @@
       font-size: 20px;
       color: #111;
   }
-
   .slogan {
     font-size: 16px;
     line-height: 1.6em;
@@ -26,14 +25,12 @@
     margin: 20px 0 100px;
     letter-spacing: 0.15em;
   }
-
   .title {
     font-size: 42px;
     color: #fff;
     margin-bottom: 15px;
     letter-spacing: 0.1em;
   }
-
   .container {
       padding: 80px 120px;
   }
@@ -82,7 +79,6 @@
       margin-top: 15px;
       color: #555;
   }
-
   .btn {
       -webkit-box-sizing: content-box;
       -moz-box-sizing: content-box;
@@ -109,7 +105,6 @@
       -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
       transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
   }
-
   .btn:hover, .btn:focus {
       border: 1px solid #333;
       background-color: #fff;
@@ -155,6 +150,13 @@
   .navbar-default .navbar-toggle {
       border-color: transparent;
   }
+
+   @media (min-width: 768px) {
+     .navbar {
+       border-radius: 0; //圆角为0
+     }
+   }
+
   .open .dropdown-toggle {
       color: #fff;
       background-color: #555 !important;
@@ -183,7 +185,6 @@
   textarea {
       resize: none;
   }
-
   .header {
     height:700px;
     background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url("https://www.kaspersky.com.cn/content/zh-cn/images/homepage/bg-hero-header-business.jpg");
@@ -191,7 +192,6 @@
     background-size: cover;
     padding: 110px;
   }
-
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -207,8 +207,11 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Designed by us</p>
+  <p>关于我们 <span>|</span> 帮助中心 <span>|</span> 开放平台 <span>|</span> 诚聘英才 <span>|</span> 联系我们 <span>|</span> 网站合作 <span>|</span> 友情链接</p>
+
+  <p>Copyright ©2017 购物商店 Design by 薛宗庆 & 詹蓉蓉</p>
 </footer>
+
 
 </body>
 </html>
