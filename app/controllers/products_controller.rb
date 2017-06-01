@@ -4,9 +4,7 @@ class ProductsController < ApplicationController
      end
 
      def show
-       if params[:id].to_i>1
          @product = Product.find(params[:id])
-       end
      end
 
      def add_to_cart
@@ -15,4 +13,5 @@ class ProductsController < ApplicationController
        flash[:notice] = "成功加入购物车"
        redirect_to :back
     end
+
 end
