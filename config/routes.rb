@@ -32,11 +32,19 @@ Rails.application.routes.draw do
       post :add_to_cart
     end
   end
-    resources :orders do
-      member do
-              post :pay_with_alipay
-              post :pay_with_wechat
-              post :apply_to_cancel
-       end
+
+  resources :orders do
+    member do
+            post :pay_with_alipay
+            post :pay_with_wechat
+            post :apply_to_cancel
      end
+   end
+
+  resources :cart_items do
+     member do
+       patch :update_choose_staus
+     end
+   end
+
 end
