@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+    before_action :authenticate_user!, only: [:checkout]
     def checkout
       @order = Order.new
     end
