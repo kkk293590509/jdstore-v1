@@ -1,5 +1,5 @@
 class CartItemsController < ApplicationController
-
+before_action :authenticate_user!
   def update_choose_staus
 
     @cart = current_cart
