@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
     before_action :authenticate_user!, only: [:create]
+  
 
     def create
       @order = Order.new(order_params)
@@ -31,7 +32,7 @@ class OrdersController < ApplicationController
           @order = Order.find_by_token(params[:id])
           @order.set_payment_with!("alipay")
           @order.make_payment!
-         
+
 
          redirect_to order_path(@order.token), notice: "使用支付宝成功完成付款"
          end
