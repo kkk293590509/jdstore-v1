@@ -17,7 +17,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
- 
+
  /* login/sign-up */
  .facepanel {
    background-image: image_url("header.jpg");
@@ -59,4 +59,16 @@
    }
 
   }
+
+   @media (min-width: 768px) {
+     .navbar {
+       border-radius: 0; //圆角为0
+     }
+   }
+
+   img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    }
  }
