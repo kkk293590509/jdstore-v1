@@ -20,9 +20,9 @@
 
  /* login/sign-up */
  .facepanel {
- 
+
    height:700px;
-   background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url("https://www.kaspersky.com.cn/content/zh-cn/images/homepage/bg-hero-header-home.jpg");
+   background-image: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),image-url("header.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    padding: 110px;
