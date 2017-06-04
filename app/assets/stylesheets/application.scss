@@ -20,10 +20,12 @@
 
  /* login/sign-up */
  .facepanel {
-   background-image: url("https://www.kaspersky.com.cn/content/zh-cn/images/homepage/bg-hero-header-home.jpg");
+ 
+   height:700px;
+   background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url("https://www.kaspersky.com.cn/content/zh-cn/images/homepage/bg-hero-header-home.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-   margin-bottom: 50px;
+   padding: 110px;
 
  .login-page, .sign-up-page {
    margin-top: 120px;
