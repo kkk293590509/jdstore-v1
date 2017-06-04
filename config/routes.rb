@@ -2,12 +2,16 @@ Rails.application.routes.draw do
 
   namespace :account do
     resources :users
+    resources :orders
   end
 
   root 'welcome#index'
   #root 'products#index'
-
-  devise_for :users
+   devise_for :user, controllers: {
+     passwords: 'users/passwords',
+     registrations: 'users/registrations',
+     sessions: 'users/sessions'
+   }
   namespace :admin do
         resources :products
         resources :orders do
