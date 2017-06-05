@@ -35,6 +35,10 @@ Rails.application.routes.draw do
     member do
       post :add_to_cart
     end
+    # 搜索功能
+    collection do
+        get :search
+    end
   end
 
   resources :orders do
