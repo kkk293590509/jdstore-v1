@@ -1,4 +1,5 @@
 /*
+/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -17,12 +18,48 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+ /*  search-bar */
+.search {
+  width: 400px;
+  margin-left: 40px; /*右边距*/
+  margin-top: 10px; /*上边距*/
+  position: relative; /*相对定位*/
+}
+.search-input {
+  width: 400px;
+  height: 30px;
+  line-height: 30px; /*设置行高，实现垂直居中，口诀「如果高度等于行高，那就实现了文本的垂直居中」*/
+  color: #666;
+  padding: 4px 20px; /*调一下上下左右边距*/
+  border-width: 2px; /*边框宽度为2px*/
+  border-color: #1ecd97; /*设置边框颜色为绿色*/
+  border-style: solid; /*设置为实线*/
+  font-size: 14px; /*字体14px*/
+  font-family: "microsoft yahei"; /*设置成微软雅黑作品*/
+  border-radius: 20px; /*圆角20px*/
+  position: absolute;  /*绝对定位*/
+}
+.search-button {
+  width: 54px;
+  height: 24px;
+  border: none; /*去掉button默认的border*/
+  background: none; /*去掉button默认的背景颜色*/
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  position: absolute; /*绝对定位*/
+  cursor: pointer; /*鼠标一上去，显示手型*/
+  top: 0;
+  right: 0;
+}
+//
+.search-button .fa-search {
+  color: #1ecd97; /*搜索图标的颜色*/
+}
 
  /* login/sign-up */
  .facepanel {
-
    height:700px;
-   background-image: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),image-url("header.jpg");
+   background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),image-url("header.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    padding: 110px;
@@ -73,4 +110,17 @@
     margin: auto;
     width: 40%;
     }
+ }
+ // footer----
+ footer {
+     background-color: #2d2d30;
+     color: #f5f5f5;
+     padding: 32px;
+ }
+ footer a {
+     color: #f5f5f5;
+ }
+ footer a:hover {
+     color: #777;
+     text-decoration: none;
  }
