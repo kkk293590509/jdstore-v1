@@ -36,15 +36,12 @@
               <%= cart_item.product.price %>
             </td>
             <div class="count-input">
+                        </div>
+            <td>
               <%= link_to("-", remove_quantity_cart_item_path(cart_item.product_id), method: :post) %>
               <input class="quantity" type="text" value="<%= cart_item.quantity %>">
               <%= link_to("+", add_quantity_cart_item_path(cart_item.product_id), method: :post) %>
-            </div>
-            <td>
-              <%= simple_form_for cart_item, url: cart_item_path(cart_item.product_id) do |f| %>
-                <%= f.select :quantity, 1..cart_item.product.quantity %>
-                <%= f.submit "更新" %>
-              <% end %>
+
             </td>
             <td>
               <%= link_to(content_tag(:i,'',class:'fa fa-trash'),cart_item_path(cart_item.product_id), method: :delete, data: { confirm: "确定要删除吗？"}) %>
