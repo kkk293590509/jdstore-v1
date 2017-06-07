@@ -52,6 +52,8 @@ Rails.application.routes.draw do
   resources :cart_items do
      member do
        patch :update_choose_staus
+       post :add_quantity
+       post :remove_quantity
      end
    end
 
